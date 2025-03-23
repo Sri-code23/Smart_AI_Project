@@ -1,0 +1,12 @@
+train: ../../DataSets/train/images
+val: ../../DataSets/val/images
+nc: 2
+names: ['fall', 'non-fall']
+
+
+# # data.yaml
+# train: ../../Datasets/train/images
+# val: ../../Datasets/val/images
+
+# nc: 1  # Replace with the actual number of classes
+# names: ['Fall-Detected']  # List of class names

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchOver Web Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WatchOver - Live Surveillance Interface</h1>
+    </header>
+
+    <main>
+        <section class="stream">
+            <h2>Live Camera Feed</h2>
+            <img id="cameraFeed" src="http://<ESP32_CAM_IP>/stream" alt="Live Camera Feed">
+        </section>
+
+        <section class="controls">
+            <h2>Controls</h2>
+            <button onclick="toggleAlarm()">Toggle Alarm</button>
+        </section>
+
+        <section class="logs">
+            <h2>Detection Logs</h2>
+            <div id="logContainer"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
